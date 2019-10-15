@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	teset
+	<input type="file">
+	<script>
+		document.querySelector('input[type="file"]').onchange = e=>{
+			let test = new FormData();
+			test.append("file",e.currentTarget.files[0]);
+			fetch("http://localhost:8080/testJSON",{method:"POST",body:JSON.stringify({test:"qwer",id:234})});			
+		}
+		// let test = new FormData();
+		// test.append("id","12");
+		// test.append("name","testCurlFetchUpdate");
+		// test.append("description","descriptionFetch");
+		// fetch("http://localhost:8080/updateProduct",{method:"POST",body:test});			
+		fetch("http://localhost:8080/json",{method:"POST",body:JSON.stringify({test:"qwer",id:234})});			
+	</script>
+</body>
+</html>

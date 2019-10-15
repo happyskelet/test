@@ -1,0 +1,23 @@
+.secret_block1{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	background: grey;
+	opacity: 0.5;
+	display: none;
+}
+.secret_block2{
+	width: 30%;
+	height: 30%;
+	background-color: yellowgreen;
+	text-align: center;
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 30%;
+	display: none;
+}
+.test_href{
+	cursor: pointer;
+}
